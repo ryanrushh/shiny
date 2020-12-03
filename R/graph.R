@@ -211,7 +211,7 @@ RLog <- R6Class(
     reset = function() {
       .globals$reactIdCounter <- 0L
 
-      self$logStack <- Stack$new()
+      self$logStack <- fastmap::faststack()
       self$msg <- MessageLogger$new(option = private$msgOption)
 
       # setup dummy and missing react information
@@ -559,5 +559,4 @@ MessageLogger = R6Class(
   )
 )
 
-#' @include stack.R
 rLog <- RLog$new("shiny.reactlog", "shiny.reactlog.console")

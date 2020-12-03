@@ -89,7 +89,7 @@ Imports:
     tools,
     crayon,
     rlang (>= 0.4.8.9002),
-    fastmap (>= 1.0.0),
+    fastmap (>= 1.0.1.9001),
     withr,
     commonmark (>= 1.7),
     glue (>= 1.3.2),
@@ -120,6 +120,7 @@ Remotes:
     rstudio/bslib,
     rstudio/shinytest,
     r-lib/cachem,
+    r-lib/fastmap,
     r-lib/rlang
 URL: http://shiny.rstudio.com
 BugReports: https://github.com/rstudio/shiny/issues
@@ -130,7 +131,6 @@ Collate:
     'bind-cache.R'
     'bind-event.R'
     'bookmark-state-local.R'
-    'stack.R'
     'bookmark-state.R'
     'bootstrap-deprecated.R'
     'bootstrap-layout.R'
