@@ -27,7 +27,7 @@ var BindingRegistry = function() {
     // Sort the bindings. The ones with higher priority are consulted
     // first; ties are broken by most-recently-registered.
     return mergeSort(this.bindings, function(a, b) {
-      return b.priority - a.priority;
+      return a.priority - b.priority;
     });
   };
 }).call(BindingRegistry.prototype);
